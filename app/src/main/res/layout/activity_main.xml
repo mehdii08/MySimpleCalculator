@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/operand1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="op1"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="+"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/operand2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="op2"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="="
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="result"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sum"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginRight="20sp"
+            android:onClick="sum"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/subtraction"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:onClick="subtraction"
+            android:text="-"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiplication"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginRight="20sp"
+            android:onClick="multiplication"
+            android:text="*"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/division"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:onClick="division"
+            android:text="/"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
